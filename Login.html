@@ -138,11 +138,103 @@
   color: rgba(156, 163, 175, 1);
 }
 
+.home{
+        font-size: 25px;
+        font-weight: 600px;
+        margin-left: 15%;
+        padding: 15px 20px;
+    }
+    .destination{
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+    
+    .packages{
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+    .gallery{
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+    .contact{
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+    .login{
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+    
+    
+    nav {
+    background: linear-gradient(90deg, #1a2980, #26d0ce); 
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    
+    }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 28px;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+    
+}
+
+nav a:hover {
+    background-color: #1a2980;
+    border-radius: 15px;
+    color: #ffdd57; 
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+    .india{
+       
+    height: 100vh;
+    width: 100vw;
+    }
+
+    #logo{
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+    }
+    
+    span{
+        color: white;
+        font-size: 30px;
+        margin-left: 1%;
+    }
 
 </style>
 <body>
-   
-<div class="form-container">
+    <nav>
+        <img src="./Assets/logo.jpg" alt="" id="logo">
+        <span>TripYatra</span>
+        <a href="./Home.html" class="home">Home</a>
+        <a href="./Destination.html" class="destination">Destination</a>
+        <a href="./Packages.html" class="packages">Packages</a>
+        <a href="./Gallery.html" class="gallery">Gallery</a>
+        <a href="./Contact.html" class="contact">Contact</a>
+        <a href="./Login.html" class="login">Login</a>
+    </nav>
+
+
+<div class="mainContainer">
+  <div class="form-container">
 	<p class="title">Login</p>
 	<form class="form">
 		<div class="input-group">
@@ -183,6 +275,7 @@
 	<p class="signup">Don't have an account?
 		<a rel="noopener noreferrer" href="./Singup.html" class="">Sign up</a>
 	</p>
+</div>
 </div>
 </body>
 </html>

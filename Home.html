@@ -125,6 +125,14 @@
 #about ul {
   list-style-type: disc;
   margin-left: 20px;
+  
+}
+.abo{
+    font-size: 50px;
+    font-weight: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .site-name {
@@ -140,21 +148,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
 
 .service{
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    background-image: url("Assets/back1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .setservice{
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 400px;
     margin-left: 50px;
     margin-bottom: 25px;
     border-radius: 10px;
+    margin-top: 50px;
 }
 
+.our{
+    font-weight: 700px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 </style>
 
@@ -172,12 +195,12 @@
     <div class="mainContainer">
 
         <div class="background">
-            <img src="./Assets/taj1.jpg" alt="" class="india">
+            <img src="./Assets/india_blue.jpg" alt="" class="india">
             
         </div>
 
         <div id="about">
-            <h2>About Us</h2>
+            <h2 class="abo">About Us</h2>
 
             <p><strong>Welcome to <span class="site-name">TripYatra</span> – Your Gateway to Exploring
                     Incredible India!</strong></p>
@@ -211,10 +234,12 @@
         </div>
 
 
+            <h1 class="our">Our Services</h1>
         <div class="service">
-            <img src="" alt="" class="setservice">
-            <img src="" alt="" class="setservice">
-            <img src="" alt="" class="setservice">
+            
+            <img src="./Assets/Traval.png" alt="" class="setservice">
+            <img src="./Assets/j1.jpg" alt="" class="setservice">
+            <img src="./Assets/house.jpg" alt="" class="setservice">
         </div>
 
 

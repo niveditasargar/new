@@ -1,45 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Packages</title>
 </head>
 <style>
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
+    }
+
+    body {
         background-color: rgba(17, 24, 39, 1);
     }
 
-    .sub-container{
-        height: 600px;
-        width: 75%;
-        border: 2px solid red;
-        border-radius: 0%;
-        margin: 8% 0px 0px 14%;
-    }
-    .logo1{
-        height: 40%;
-        width: 50%;
-        border: 1px solid red;
-        border-radius: 50%;
-        margin: 50px 0px 0px 30px;
+    .home {
+        font-size: 25px;
+        font-weight: 600px;
+        margin-left: 15%;
+        padding: 15px 20px;
     }
 
-    
+    .destination {
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+
+    .packages {
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+
+    .gallery {
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+
+    .contact {
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+
+    .login {
+        font-size: 25px;
+        font-weight: 600px;
+        padding: 15px 20px;
+    }
+
+
+    nav {
+        background: linear-gradient(90deg, #1a2980, #26d0ce);
+        height: 100px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        position: fixed;
+
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        font-size: 28px;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+    }
+
+    nav a:hover {
+        background-color: #1a2980;
+        border-radius: 15px;
+        color: #ffdd57;
+        transform: scale(1.1);
+        text-decoration: underline;
+    }
+
+    .india {
+
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #logo {
+        height: 80px;
+        width: 80px;
+        border-radius: 100%;
+        margin-left: 15px;
+
+
+    }
+
+    span {
+        color: white;
+        font-size: 30px;
+        margin-left: 1%;
+    }
+
+    .mainContainer {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .pack {
+        width: 600px;
+        height: 600px;
+        padding: 30px 25px;
+        background: linear-gradient(135deg, #43cea2, #185a9d);
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        font-family: 'Segoe UI', sans-serif;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #logo1 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 15px auto;
+    }
+
+
+    .destination-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .pack p {
+        font-size: 18px;
+        margin: 8px 0;
+        line-height: 1.5;
+    }
+
+    .book-btn {
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ffdd57;
+        color: #1a1a1a;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .book-btn:hover {
+        background-color: #ffc107;
+        transform: scale(1.05);
+    }
 </style>
+
 <body>
 
+    <div class="navbar">
+        <nav>
+            <img src="./Assets/logo.jpg" alt="" id="logo">
+            <span>TripYatra</span>
+            <a href="./Home.html" class="home">Home</a>
+            <a href="./Destination.html" class="destination">Destination</a>
+            <a href="./Packages.html" class="packages">Packages</a>
+            <a href="./Gallery.html" class="gallery">Gallery</a>
+            <a href="./Contact.html" class="contact">Contact</a>
+            <a href="./Login.html" class="login">Login</a>
+        </nav>
+    </div>
+    <br><br><br><br><br><br><br><br><br>
 
     <div class="mainContainer">
-        <div class="sub-container">
-            <div class="logo1">
-                <img src="./Assets/logo.jpg" alt="" class="">
-            </div>
-            <div class="info"></div>
+        <div class="pack">
+            <img src="./Assets/logo.jpg" alt="TripYatra Logo" id="logo1">
+
+            <h2 class="destination-title">✨ Kashmir Paradise Tour</h2>
+
+            <p><strong>🗓️ Duration:</strong> 6 Days / 5 Nights</p>
+            <p><strong>💰 Price per Person:</strong> ₹18,999/-</p>
+            <p><strong>📍 Places to Visit:</strong> Srinagar, Gulmarg, Pahalgam, Dal Lake, Mughal Gardens</p>
+            <p><strong>🛣️ Travel Route:</strong> Delhi ➡️ Jammu ➡️ Srinagar ➡️ Gulmarg ➡️ Pahalgam ➡️ Return</p>
+            <a href="./Login.html">
+                <button class="book-btn">📩 Book Now</button></a>
         </div>
     </div>
+
+
 </body>
+
 </html>

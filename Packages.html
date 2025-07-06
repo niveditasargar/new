@@ -107,10 +107,12 @@
     }
 
     .mainContainer {
-        display: flex;
-        justify-content: center;
-
-    }
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+    flex-wrap: wrap; 
+    margin-top: 50px;
+}
 
     .pack {
         width: 600px;
@@ -162,6 +164,22 @@
         background-color: #ffc107;
         transform: scale(1.05);
     }
+    .book-btn1{
+        padding: 12px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #ffdd57;
+        color: #1a1a1a;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+    }
+ 
+    .book-btn1:hover {
+        background-color: #ffc107;
+        transform: scale(1.05);
+    }
 </style>
 
 <body>
@@ -193,6 +211,20 @@
             <a href="./Login.html">
                 <button class="book-btn">📩 Book Now</button></a>
         </div>
+        <br><br><br><br><br>
+
+        <div class="pack">
+        <img src="./Assets/logo.jpg" alt="TripYatra Logo" id="logo1">
+
+        <h2 class="destination-title">🌴 Kerala Backwaters & Hills Tour</h2>
+
+        <p><strong>🗓️ Duration:</strong> 7 Days / 6 Nights</p>
+        <p><strong>💰 Price per Person:</strong> ₹22,500/-</p>
+        <p><strong>📍 Places to Visit:</strong> Alleppey, Munnar, Kochi, Thekkady, Kumarakom</p>
+        <p><strong>🛣️ Travel Route:</strong> Kochi ➡️ Munnar ➡️ Thekkady ➡️ Alleppey ➡️ Kumarakom ➡️ Kochi</p>
+
+        <button class="book-btn1">📩 Book Now</button>
+    </div>
     </div>
 
 

@@ -15,8 +15,15 @@
       font-family: 'Segoe UI', sans-serif;
     }
 
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
     /* NAVBAR */
-     nav {
+    nav {
       background: linear-gradient(90deg, #1a2980, #26d0ce);
       height: 100px;
       width: 100%;
@@ -82,10 +89,7 @@
     .nav-links {
       display: flex;
       flex-wrap: wrap;
-      
     }
-
-    
 
     /* MAIN */
     .mainContainer {
@@ -97,9 +101,11 @@
       width: 100%;
       height: auto;
     }
+
     #home {
-        margin-left: 420px;
+      margin-left: 420px;
     }
+
     #about {
       background-color: #f9f9f9;
       padding: 40px;
@@ -157,18 +163,92 @@
     }
 
     /* FOOTER */
-    .footer {
-      background-color: #1a2980;
-      color: white;
-      text-align: center;
-      height: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
+    footer {
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #f1f1f1;
+      padding: 50px 20px 20px;
+      font-family: "Montserrat", sans-serif;
     }
 
-    /* RESPONSIVE */
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .footer-section h2,
+    .footer-section h3 {
+      margin-bottom: 15px;
+      font-size: 20px;
+      color: #ffcc00;
+    }
+
+    .footer-section p {
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul li a {
+      text-decoration: none;
+      color: #ddd;
+      transition: 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #ffcc00;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 12px;
+      font-size: 18px;
+      color: #ddd;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #ffcc00;
+    }
+
+    .footer-bottom {
+      margin-top: 30px;
+      text-align: center;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    /* ✅ RESPONSIVE BREAKPOINTS */
+    @media (max-width: 1024px) {
+      nav span {
+        font-size: 26px;
+      }
+      nav a {
+        font-size: 18px;
+      }
+      .our {
+        font-size: 26px;
+      }
+
+      .setservice {
+        width: 250px;
+        height: 200px;
+      }
+    }
+
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -178,7 +258,6 @@
       }
 
       .site-name {
-        margin-left: 10px;
         font-size: 24px;
       }
 
@@ -190,7 +269,7 @@
 
       .nav-links a {
         font-size: 16px;
-        margin: 10px;
+        margin: 8px;
       }
 
       .service {
@@ -202,29 +281,41 @@
         width: 90%;
         height: auto;
       }
-    }
 
-    @media (max-width: 480px) {
-      #logo {
-        height: 60px;
-        width: 60px;
+      #home {
+        margin-left: 0;
       }
 
-      .site-name {
-        font-size: 20px;
+      #about {
+        padding: 20px;
       }
 
       .our {
-        font-size: 24px;
+        font-size: 22px;
       }
 
       #about h2 {
-        font-size: 26px;
+        font-size: 24px;
       }
 
       #about p,
       #about ul {
         font-size: 14px;
+      }
+
+      .footer-section h2,
+      .footer-section h3 {
+        font-size: 18px;
+      }
+
+      .footer-section p,
+      .footer-bottom {
+        font-size: 12px;
+      }
+
+      .background img.india {
+        max-height: 400px;
+        object-fit: cover;
       }
     }
   </style>
@@ -255,15 +346,12 @@
 
     <div id="about">
       <h2>About Us</h2>
-
       <p><strong>Welcome to <span class="site-name">TripYatra</span> – Your Gateway to Exploring Incredible India!</strong></p>
-
       <p>
         India is not just a destination; it’s an emotion, a journey through time, tradition, and timeless beauty.
         At <strong class="site-name">TripYatra</strong>, we’re passionate about helping you discover the real essence
         of India – from majestic mountains and serene backwaters to royal palaces, vibrant festivals, and hidden gems.
       </p>
-
       <p>
         Our mission is to inspire travelers with curated guides, breathtaking visuals, and authentic stories that bring
         India’s rich heritage to life. Whether you’re dreaming of a spiritual journey through Varanasi, a scenic escape
@@ -291,8 +379,51 @@
 
   <!-- Footer -->
   <footer>
-    <div class="footer">
-      <p class="footer-note">© 2025 TripYatra. All rights reserved.</p>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>Placement Resources</h2>
+        <p>
+          A community-driven project to share the best placement and learning
+          resources for students.
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">Contribute</a></li>9
+          <li><a href="#">Resources</a></li>
+          <li><a href="./roadmap.html">Roadmap</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Top Categories</h3>
+        <ul>
+          <li><a href="./dsa.html">DSA Practice</a></li>
+          <li><a href="./resume.html">Resume Tips</a></li>
+          <li><a href="./interviewprep.html">Interview Prep</a></li>
+          <li><a href="#">Open Source</a></li>
+          <li><a href="./roadmap.html">Roadmaps</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Get in Touch</h3>
+        <p><strong>Location:</strong> India</p>
+        <p><strong>Email:</strong> contact@firstcontrib.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © 2025 All Rights Reserved | Built with ❤️ by the FCP Community
     </div>
   </footer>
 </body>
